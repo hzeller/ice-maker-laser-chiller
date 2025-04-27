@@ -1,0 +1,1 @@
+avr-g++ -Os -Wall -Wextra -Wno-unused-parameter -ffunction-sections -fdata-sections -mcall-prologues -DF_CPU=16000000UL  -I. -Ithird_party/avr-ds18b20/include -std=c++17

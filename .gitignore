@@ -1,0 +1,7 @@
+*~
+.direnv
+.envrc
+*.o
+*.hex
+*.elf
+
