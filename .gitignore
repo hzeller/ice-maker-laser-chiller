@@ -5,3 +5,6 @@
 *.hex
 *.elf
 
+firmware/bdfont-support.*
+firmware/font-bignumber.*
+firmware/font-smalltext.*

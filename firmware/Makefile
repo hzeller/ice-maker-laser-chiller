@@ -45,9 +45,12 @@ main.hex: main.elf
 
 main.cc : font-smalltext.c font-bignumber.c
 
+bdfont-support.h bdfont-support.c:
+	bdfont-data-gen -s
+
 # This requires http://github.com/hzeller/bdfont.data to be installed
 font-%.c: %.chars
-	bdfont-data-gen -s fonts/$*.bdf $* -C $*.chars
+	bdfont-data-gen fonts/$*.bdf $* -C $*.chars
 
 flash: main.hex
 	$(FLASH_CMD)
